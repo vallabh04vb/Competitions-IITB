@@ -1,0 +1,151 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{%block body%}
+{% if messages %}
+{% for message in messages%}
+<div
+  class="alert alert-{{ messages.tags }} alert-dismissible fade show"
+  role="alert"
+  style="
+    margin: 0;
+    z-index: 999;
+ border: 10px solid #4D80FF;
+    
+    background: #C7D7FE;
+    
+    box-shadow: 0px 0px 50px 1px #444CE7;
+    font-family: Future Bk Bt !important;
+    color: Black !important;
+  "    font-family: Future Bk Bt !important;
+  "
+>
+  <strong>{{ message }}</strong>
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+{% endfor %} {%endif%}
+<div class="main-img">
+    <img src="./static/images/case-cover.png" alt="" class="compi-img">
+    <div class="d-flex justify-content-center" style="background-color:#15284D ; margin-top: 
+    -2vw;" >
+        <button  id="text4" data-aos="fade-up"
+      
+      data-aos-easing="ease-in-sine"><a href="{% url 'Casestudyreg' %}"  style="text-decoration: none;"><b class="register">Register</b></a></button> 
+    </div>
+</div>
+<section class="compi-structure" style="background-color:  #15284D;">
+<div class="details" data-aos="fade-up"
+      
+      data-aos-easing="ease-in-sine" style="background-color:  #C7D7FE;border-radius: 53px;
+border: 10px solid #4D80FF;box-shadow: 0px 0px 50px 1px #444CE7;
+
+">
+   <div class="decrpt">
+    <h3>
+        Description:
+    </h3>
+    <p>
+      Welcome to the CASE STUDY COMPI - where intellect meets innovation, and problem-solving takes center stage. Our competition is a thrilling journey into the heart of real-world challenges, a platform for showcasing your creativity and analytical prowess, and an opportunity to make your mark in the world of critical thinking.
+    </p>
+   </div>
+   <div class="decrpt">
+    <h3>
+        Structure:
+    </h3>
+    <p style="list-style: circle;">
+      <li style="list-style:none">Round 1: <b>Preliminary:
+      </b>
+        <ul>
+          <li>Participants will submit an abstract containing a brief solution/research to the problem statement/sector study.</li>
+          <li>The abstract file should be 1-2 slides long.</li>
+          <li>Deadline for Registration: <b>25th December, 2023 11:59 PM</b>  
+          </li>
+        </ul>
+      </li>
+      <li style="list-style:none">Round 2: <b>
+        Pre-Finals:
+        </b>
+        <ul>
+          <li>Participants will craft a detailed and concise presentation of max 12-15 slides.</li>
+          <li>The presentation should address the problem statement or the provided case study.</li>
+          <li>Submission Deadline: <b>17 Jan 2023, Wed 11:59 PM</b></li>
+        </ul>
+      </li>
+      <li style="list-style:none">Final Round: <b>Finals:
+      </b>
+        <ul>
+          <li>Participants will prepare a 15-minute presentation on their Round 2 submission.</li>
+          <li>They will deliver this presentation during the second round of the competition in an offline setting.</li>
+          <li>Following their presentation, there will be a brief 4 to 5-minute Q&A session with the panel of judges.</li>
+        </ul>
+      </li>
+
+    </p>
+    <h3>
+        Rules & Regulations:
+    </h3>
+    <p style="list-style: circle;">
+      <li>Each team should consist of a maximum of 1-3 members.</li>
+      <li>The naming convention for abstract submission should be Leadername_teamname.</li>
+      <li>All decisions regarding eligibility and final judgment shall rest with the Organizing Committee.</li>
+      <li>The format and rules of events are subject to change before the start of the event.</li>
+
+    </p>
+    <h3>
+        Prizes & Perks:
+
+    </h3>
+    <p style="list-style: circle;">
+      <li><b>Cash Prizes</b>
+        <ul style="list-style-type: style circle;">
+          <li> 1st Prize - 12000
+          </li>
+          <li>2nd Prize - 8000</li>
+          <li>3rd Prize - 5000</li>
+        </ul>
+      </li>
+      <li>
+       
+        PPI (pre-placement interview) and SIP opportunities for the finalists
+      </li>
+      <li>Abhyuday, IIT Bombay Certificates: Provided to all participants (both participation and winners).</li>
+      <li>Attend exclusive workshops and panel discussions</li>
+      <li>Network with industry leaders and potential employers</li>
+    </p>
+    <h3>
+      Partner:
+  </h3>
+  <p>
+    <br>
+    <a href="https://www.intasanimalhealth.com/"><img src="./static/images/Intas logo.png" class="partner-logo" alt=""></a>
+    <br>
+    <a href="https://www.intasanimalhealth.com/">Intas Animal Health</a>, is a leading, vertically integrated global pharmaceutical company headquartered in India, with advanced formulation development, manufacturing, and marketing capabilities. Its success and unparalleled growth lie in the clinical execution of strategic moves in manufacturing, R&D, biotechnology and global business operations.
+
+  </p>
+   </div>
+</div>
+</section>
+<div class="contact-div">
+    <h2 class="text-center" class="contact-text"><b class="contact-text" data-aos="fade-right"
+      
+      data-aos-easing="ease-in-sine"  id="contact-us-abhyuday">Contact Us</h2>
+   <div class="d-flex flex-column justify-content-center p-2vw" style="gap: 20px; margin-top: 7vw;">
+    
+     <div class="text-center name-div" data-aos="zoom-in-up" data-aos-duration="1000">
+      <h3 class="person">Prajyot Chakre</h3>
+        
+        <h5 class="post">Competitions Head</h5>
+      
+        <h5 class="post">prajyot.abhyuday@gmail.com</h5>
+      
+        <h5 class="post">7448175579</h5>
+    </div>
+   </div>
+  </div>
+
+{% endblock body %}

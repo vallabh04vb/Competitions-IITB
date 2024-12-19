@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{%block body%}
+{% if messages %}
+{% for message in messages%}
+<div
+  class="alert alert-{{ messages.tags }} alert-dismissible fade show"
+  role="alert"
+  style="
+    margin: 0;
+    z-index: 999;
+   border: 10px solid #4D80FF;
+    
+    background: #C7D7FE;
+    
+    box-shadow: 0px 0px 50px 1px #444CE7;
+    font-family: Future Bk Bt !important;
+    color: Black !important;
+  "
+    font-family: Future Bk Bt !important;
+  "
+>
+  <strong>{{ message }}</strong>
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+{% endfor %} {%endif%}
+<div class="main-img">
+    <img src="./static/images/union.png" alt="" class="compi-img">
+    <div class="d-flex justify-content-center" style="background-color:#15284D ; margin-top: 
+    -2vw;" >
+        <button  id="text4" data-aos="fade-up"
+      
+      data-aos-easing="ease-in-sine"><a href="{% url 'union-budgetreg' %}"  style="text-decoration: none;"><b class="register">Register</b></a></button> 
+    </div>
+</div>
+<section class="compi-structure" style="background-color:  #15284D;">
+<div class="details" data-aos="fade-up"
+      
+      data-aos-easing="ease-in-sine" style="background-color:  #C7D7FE;border-radius: 53px;
+border: 10px solid #4D80FF;box-shadow: 0px 0px 50px 1px #444CE7;
+
+">
+   <div class="decrpt">
+    <h3>
+        Description:
+    </h3>
+    <p>
+      Your financial prowess meets social responsibility in the coolest way possible. Get into the shoes of the legislature and get a chance to construct your country's union budget. Being the President make sure to defend that well in front of bureaucrats and diplomats.
+
+    </p>
+   </div>
+   <div class="decrpt">
+    <h3>
+        Structure:
+    </h3>
+    <p style="list-style: circle;">
+      <li style="list-style: none;">Participation: In teams of 1 to 4</li>
+      <li style="list-style: none;">Rounds: Elimination(Online), Semi-Finals (Offline), Finals (Offline)</li>
+      <li style="list-style: none;">Elimination:</li>
+      <ul>
+          <li>Fill up a questionnaire containing questions about the budget allocation process and various legislatures across the world to the best of your knowledge.</li>
+          <li>Brownie points for including your own analysis.</li>
+          <li>Deadline for Registration: <b>25th December, 2023 11:59 PM</b></li>
+          <li>You will receive the questionnaire once you register on the team leader's mail address.</li>
+      </ul>
+      <li style="list-style: none;">Semi-Finals:</li>
+      <ul>
+          <li>The shortlisted teams will be allotted a country 2 weeks prior to the semi-finals.</li>
+          <li>The teams will have to go through the background of that country and legislate a union budget to various schemes and sectors.</li>
+          <li>Some of the sample sectors that can be used are —</li>
+          <li>You are free to legislate your own schemes and policies and allocate budget according to that. There is no restriction in terms of your purview of a country's budget.</li>
+          <li>The teams will have to prepare a 15 slide deck of their budget and present it in front of a jury offline in our Social Fest at IIT Bombay.</li>
+          <li>The pitching time will be 10 min + 3 min QnA</li>
+          <li>The judgment will be more on the basis of how well the team defends the budget than it being close to the truth or ideality. Thus, make sure to prepare your defense well with appropriate facts and figures.</li>
+      </ul>
+      <li style="list-style: none;">Finals:</li>
+      <ul>
+          <li>The top 5 teams from the Semi-Finals will battle it out in the finals.</li>
+          <li>This will be a live round.</li>
+          <li>The teams will be given the country 3 hours prior to the pitching and they will have to come up with a deck (similar to the one described above) within those 3 hours.</li>
+          <li>The time for pitching will be 7 min + 3 min QnA.</li>
+      </ul>
+  </ul>
+
+    </p>
+    <h3>
+        Rules & Regulations:
+    </h3>
+    <p style="list-style: circle;">
+      <li>Only college students (undergraduates or postgraduates) are allowed to participate in this competition.</li>
+      <li>The judgment of the questionnaire will be more based on your personal views than the facts.</li>
+      <li>Teams can have a maximum of 4 members, including the Team leader. More than 4 is not allowed.</li>
+      <li>The Team leader will be the point of contact, and his/her email address will be used for future correspondence.</li>
+      <li>Only the team leader has to register on the portal. He/She can later add his/her team members in the Questionnaire Submission form.</li>
+      <li>An individual can be associated only with a single team. Multiple registrations by a particular team or person shall lead to disqualification.</li>
+      <li>In case of any discrepancy, the decision of the organizing team shall be binding.</li>
+  
+    </p>
+    <h3>
+        Prizes & Perks:
+
+    </h3>
+    <p style="list-style: circle;">
+      <li><b>Cash Prizes</b>
+        <ul style="list-style-type: style circle;">
+          <li> 1st Prize - 7000
+          </li>
+          <li>2nd Prize - 5000</li>
+          <li>3rd Prize - 3000</li>
+        </ul>
+      </li>
+       
+      <li>Free Professional Management Certificate Courses worth Rs. 25,000 for the winners by Young Skilled India</li>
+            <li>Internship opportunities for all finalists by VSkills Certified</li>
+            <li>Exclusive Merchandise to the winners & Official Certificates and LORs from Abhyuday, IIT Bombay to all the participants.</li>
+      
+  
+    </p>
+   </div>
+</div>
+</section>
+<div class="contact-div">
+    <h2 class="text-center" class="contact-text"><b class="contact-text" data-aos="fade-right"
+      
+      data-aos-easing="ease-in-sine"  id="contact-us-abhyuday">Contact Us</h2>
+   <div class="d-flex flex-column justify-content-center p-2vw" style="gap: 20px; margin-top: 7vw;">
+    
+     <div class="text-center name-div" data-aos="zoom-in-up" data-aos-duration="1000">
+      <h3 class="person">Devang Agarwal</h3>
+      
+      <h5 class="post">Competitions Head</h5>
+    
+      <h5 class="post">devang.abhyuday@gmail.com</h5>
+    
+      <h5 class="post">9898558427</h5>
+    </div>
+   </div>
+  </div>
+
+{% endblock body %}

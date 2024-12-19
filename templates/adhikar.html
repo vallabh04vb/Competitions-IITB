@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+{% load static %}
+{%block body%}
+{% if messages %}
+{% for message in messages%}
+<div
+  class="alert alert-{{ messages.tags }} alert-dismissible fade show"
+  role="alert"
+  style="
+    margin: 0;
+    z-index: 999;
+     border: 10px solid #4D80FF;
+    
+    background: #C7D7FE;
+    
+    box-shadow: 0px 0px 50px 1px #444CE7;
+    font-family: Future Bk Bt !important;
+    color: Black !important;
+  "
+    font-family: Future Bk Bt !important;
+  "
+>
+  <strong>{{ message }}</strong>
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+{% endfor %} {%endif%}
+<div class="main-img">
+    <img src="./static/images/Adhikaar Cover Image1.png" alt="" class="compi-img">
+    <div class="d-flex justify-content-center" style="background-color:#15284D ; margin-top: 
+    -2vw;" >
+        <button  id="text4" data-aos="fade-up"
+      
+      data-aos-easing="ease-in-sine"><a href="{% url 'Mock_parliamentreg' %}"  style="text-decoration: none;"><b class="register">Register</b></a></button> 
+    </div>
+</div>
+<section class="compi-structure" style="background-color:  #15284D;">
+<div class="details" data-aos="fade-up"
+      
+      data-aos-easing="ease-in-sine" style="background-color:  #C7D7FE;border-radius: 53px;
+border: 10px solid #4D80FF;box-shadow: 0px 0px 50px 1px #444CE7;
+
+">
+   <div class="decrpt">
+    <h3>
+        Description:
+    </h3>
+    <p>
+      A realm where the currency is not gold or silver but the weight of your words, where ideas are the ultimate treasures and where intellect meets interaction. Bring up your Diplomatic hats along with you and participate in this Mock Parliament to make your words count.
+
+    </p>
+   </div>
+   <div class="decrpt">
+    <h3>
+        Structure:
+    </h3>
+    <p style="list-style: circle;">
+        <li  style="list-style: none;">Participation: Individual</li>
+        <li style="list-style: none;">Elimination:</li>
+       
+       <li> Submit a 3-4 min video of yourselves speaking out your personal views on the topic “ — “. You should upload your video in the following google form. You will be judged on the basis of clarity, communication and reason.</li>
+       <li>
+        
+Deadline for Registration: <b>25th December, 2023 11:59 PM</b>
+
+
+</li>
+        <li>You will receive a mail regarding the submission after successful registration.</li>
+        <li style="list-style: none;">Finals:</li>
+        <li>This will be a Mock Parliamentary setup consisting of two sides namely ‘Ruling Party’ and ‘The Opposition’.</li>
+        <li>All the selected participants will be allotted one of the two sides and one politician/position will be associated with you (on a random basis) 6-7 days before the finals.</li>
+        <li>A legal bill will be given by our team 3 days prior to the finals to the selected participants on which the house will discuss.</li>
+        <li>The participants from The Ruling Party will put forward arguments in support of the bill and those from The Opposition against it.</li>
+        <li>All participants will be given a chance to present their opening and closing statements on the bill after which the result for the bill will be declared on the basis of majority voting.</li>
+        <li>The Speaker of the house will moderate the entire Parliamentary session and the final decision lies at its discretion.</li>
+    </p>
+    <h3>
+        Rules & Regulations:
+    </h3>
+    <p style="list-style: circle;">
+      <li>Only college students (undergraduates or postgraduates) are allowed to participate in this competition.</li>
+      <li>The video for the elimination round should not be edited and must be taken in a single frame with you in it.</li>
+      <li>The medium is strictly English in both the rounds.</li>
+      <li>Use of obscene language in any of the rounds will lead to direct disqualification.</li>
+      <li>Participants should refrain themselves from using any statements that might hurt a community or statements directed against any community (religion, gender, race, caste, etc.)</li>
+      <li>The decisions of the organizing team will be considered final in case of any disputes.</li>
+
+    </p>
+    <h3>
+        Prizes & Perks:
+
+    </h3>
+    <p style="list-style: circle;">
+      <li><b>Cash Prizes</b>
+        <ul style="list-style-type: style circle;">
+          <li> 1st Prize - 5000
+          </li>
+          <li>2nd Prize - 3000</li>
+          <li>3rd Prize - 2000</li>
+        </ul>
+      </li>
+      <li>Free Courses & Internship Opportunities to the winners and 30% discount coupons to all the finalists by Seekho</li>
+      <li>Internship Opportunities to all the finalists by EventBeep & Green Yatra</li>
+      <li>Exclusive Merchandise to the winners & Official Certificates and LORs from Abhyuday, IIT Bombay to all the participants.</li>
+
+    </p>
+   </div>
+</div>
+</section>
+<div class="contact-div">
+    <h2 class="text-center" class="contact-text"><b class="contact-text" data-aos="fade-right"
+      
+      data-aos-easing="ease-in-sine"  id="contact-us-abhyuday">Contact Us</h2>
+   <div class="d-flex flex-column justify-content-center p-2vw" style="gap: 20px; margin-top: 7vw;">
+    
+     <div class="text-center name-div" data-aos="zoom-in-up" data-aos-duration="1000">
+      <h3 class="person">Devang Agarwal</h3>
+      
+      <h5 class="post">Competitions Head</h5>
+    
+      <h5 class="post">devang.abhyuday@gmail.com</h5>
+    
+      <h5 class="post">9898558427</h5>
+    </div>
+   </div>
+  </div>
+
+{% endblock body %}

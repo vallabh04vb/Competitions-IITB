@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+.navbar.bg-body-tertiary {
+  
+    width: 100% !important;
+    position: fixed !important;
+    /* margin-top: -3.5vw !important; */
+    z-index: 999 !important;
+    margin-top: 0vw !important;
+    border: 1px solid transparent;
+    backdrop-filter: blur(10px);
+  
+  }
+  .navbar-expand-lg .navbar-collapse {
+    position: absolute;
+    /* top: 2vw; */
+    right: -1%;
+    color: rgb(255, 255, 255) !important;
+  }
+  #navbarSupportedContent ul li a {
+    color: rgb(255, 255, 255) !important;
+    padding: 7px 7px;
+    margin: 7px 7px;
+  
+    font-size: 115%;
+  }
+  /* .container-fluid{
+    box-shadow: 1px 25px 25px black !important;
+  } */
+  /* .nav-item a{
+    color: black !important;
+  } */
+  #navbarSupportedContent ul li a{   
+    color: #FFF;
+
+font-family: Marcellus;
+    font-size: 1.4vw;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    position: absolute;
+    right: 1%;
+    color: rgb(255, 255, 255) !important;
+    
+    @media only screen and (max-width: 995px) {
+      top: 80% !important;
+      position: absolute;
+      /* background-color: rgb(0, 0, 0) !important; */
+      z-index: 2 !important;
+      color: white;
+    }
+
+  }
+  @media only screen and (max-width: 995px){
+  .navbar-nav{
+      width: 50vw !important;
+      background-color: #122D70;
+    }
+    #navbarSupportedContent ul li a {
+     
+
+      font-family: Marcellus;
+    font-size: 3.5vw;
+}
+
+  }
+  #logo{
+    width: 18.5vh!important;
+    height: 6vh;
+    margin-left: 1vw !important;
+    @media only screen and (max-width:600px){
+      width: 18vw !important;
+      height: 4vh !important;
+      }
+  
+
+  }
+  @media only screen and (max-width:400px){
+     #logo{ width: 25vw !important;
+      height: 4vh !important;
+    }
+   }
+
+/* navbar-ends */
+ 
+.main-img{
+  /* width: 100% !important; */
+  /* position: fixed; */
+  top: 0;
+  height: auto;
+
+}
+.compi-img{
+  width:100% !important;
+  
+}
+.about{
+  position: relative;
+  background-color: #15284D;
+  padding: 6vw !important;
+  margin-bottom: -3px !important;
+  margin-top: -3px !important;
+
+  color: white!important;
+  color: #FFF;
+
+font-family: Marcellus !important;
+ 
+} 
+.about-para{
+  /* margin: 3vw !important; */
+  font-size: 2.5vw;
+  margin: 30px;
+ }
+ .about-text{
+  font-size: 4vw;
+ 
+
+ }
+  
+@media only screen and (max-width:600px){
+  .about-para{
+    font-size: 4.5vw;
+
+  }
+  .about-text{
+    font-size: 5vw;
+  }
+}
+.card-container {
+  /* position: relative; */
+  /* width: 300px; 
+  height: 200px;  */
+  overflow: hidden;
+  background-color: #15284D;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 20px !important;
+  padding: 20px;
+ padding-bottom: 40px!important;
+}
+
+.card {
+  /* position: relative !important; */
+  /* width: 100%;
+  height: 100%; */
+  /* width: 30vw; */
+  transition: filter 0.3s;
+  background-color:#15284D !important;
+  margin: -3px !important;
+  justify-content: center!important;
+  border: none;
+  /* padding-bottom: -200px !important;
+  padding-top: -200px !important; */
+}
+/* .compi-card{
+  width: 30vw!important;
+} */
+.compi-card > img:hover{
+  filter: blur(5px); /* Adjust the blur amount as needed */
+}
+.compi-tittle{
+  font-family: Marcellus;
+  color: white;
+  font-weight: 700;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(255, 255, 255); /* Adjust text color as needed */
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 999 !important;
+  font-family: Marcellus;
+}
+
+.card:hover {
+  opacity: 1;
+  /* filter: blur(1px); */
+  backdrop-filter: blur(5px)!important;
+}
+@media only screen and (max-width:600px){
+  .compi-card, .card{
+    width: 90vw !important;
+  }
+}
+a > #details-bt {
+  transition: all .5s ease;
+  color: #ffffff;
+  border: 3px solid white;
+
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  font-size: 17px;
+  background-color : transparent;
+  padding: 10px;
+  outline: none;
+  border-radius: 4px;
+}
+a > #details-bt:hover {
+  color: #001F3F;
+  background-color: #fff;
+  
+}
+.faqbg{
+  background-color: #15284D !important;
+  /* width: 100% !important; */
+  margin-top: -3px !important;
+  margin-right: -0.65px !important;
+
+
+}
+
+.faq-div{
+  margin: 5vw;
+  gap: 10px;
+  width: 100%;
+  
+}
+.faq-width{
+ width: 50vw !important;
+@media only screen and (max-width:600px) {
+  width: 97vw !important;
+  background-color:#15284D !important;
+
+  
+}
+
+}
+.accordion-item{
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #ED46FD, #5529C5) 1;
+  color: black !important;
+  padding: 1px 1px;
+  font-family:  Marcellus;
+ 
+  cursor: pointer;
+  transition:  0.3s ease;
+}
+.contact-div{
+  padding-top: 7vw !important;
+  background-color:#15284D !important;
+  margin-top: -3px !important;
+  margin-bottom: -3px !important;
+
+}
+.pra-dev-div{
+  display: flex !important; 
+  justify-content: space-around; 
+  flex-wrap: wrap; padding: 2vw ; 
+  gap: 20px !important; 
+  @media only screen and (max-width:880px){
+         flex-direction: column !important;
+   }
+}
+.contact-text{
+  font-size: 5vw ;
+  font-weight:200 ;
+  color: white;
+  text-align: center ;
+  font-family:  Marcellus;
+
+  
+}
+.name-div{
+  color: white !important;
+  
+  font-family: Marcellus !important
+}
+.name{
+  font-weight: 800;
+ 
+  font-family: Marcellus !important;
+  color: white;
+  
+}
+.bottom-div{
+  padding-top: 50px !important;
+  background-color:#15284D !important;
+  font-family: Marcellus !important;
+  color: white;
+  padding-bottom: 30px !important;
+  margin-top: -3px;
+
+}
+.follow-text{
+  font-family: Marcellus !important;
+  font-weight: 200!important;
+
+}
+.social-img > a > img{
+  /* width:2vw ; */
+  
+  transition: transform 0.3s ease-in-out !important;
+}
+
+
+.social-img > a > img:hover{
+transform: scale(1.5) !important;
+transition: transform 0.3s ease-in-out !important;
+}
+@media only screen and (max-width:600px){
+  .follow-text{
+    font-size: 3vw !important;
+
+  }
+  .social-img > a > img{
+    width: 3vw !important;
+  }
+}
+#text4{
+  position: relative;
+  top: -25vw;
+  /* background: radial-gradient(black, transparent); */
+  border-radius: 53px;
+  border: 4px solid #C7D7FE;
+  background-color: #122D70;
+  box-shadow: 0px 0px 44px 1px rgba(68, 76, 231, 0.50);
+  width: 9vw !important;
+  height: 3.5vw  !important;
+}
+
+
+
+
+
+
+

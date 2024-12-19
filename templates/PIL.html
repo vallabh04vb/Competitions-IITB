@@ -1,0 +1,141 @@
+{% extends 'base.html' %}
+{% load static %}
+{%block body%}
+{% if messages %}
+{% for message in messages%}
+<div
+  class="alert alert-{{ messages.tags }} alert-dismissible fade show"
+  role="alert"
+  style="
+    margin: 0;
+    z-index: 999;
+   border: 10px solid #4D80FF;
+    
+    background: #C7D7FE;
+    
+    box-shadow: 0px 0px 50px 1px #444CE7;
+    font-family: Future Bk Bt !important;
+    color: Black !important;
+  "
+    font-family: Future Bk Bt !important;
+  "
+>
+  <strong>{{ message }}</strong>
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+{% endfor %} {%endif%}
+<div class="main-img">
+    <img src="./static/images/pildraft.png" alt="" class="compi-img">
+    <div class="d-flex justify-content-center" style="background-color:#15284D ; margin-top: 
+    -2vw;" >
+        <button  id="text4" data-aos="fade-up"
+      
+      data-aos-easing="ease-in-sine"><a href="{% url 'PilDraftreg' %}"  style="text-decoration: none;"><b class="register">Register</b></a></button> 
+    </div>
+</div>
+<section class="compi-structure" style="background-color:  #15284D;">
+<div class="details" data-aos="fade-up"
+      
+      data-aos-easing="ease-in-sine" style="background-color:  #C7D7FE;border-radius: 53px;
+border: 10px solid #4D80FF;box-shadow: 0px 0px 50px 1px #444CE7;
+
+">
+   <div class="decrpt">
+    <h3>
+        Description:
+    </h3>
+    <p>
+      Welcome to the PIL (Public Interest Litigation) Drafting Competition! This competition is an opportunity for legal enthusiasts and aspiring lawyers to showcase their legal drafting skills and contribute to the realm of public interest law. We invite you to participate and demonstrate your ability to draft persuasive PIL documents that address crucial societal issues.
+
+
+    </p>
+   </div>
+   <div class="decrpt">
+    <h3>
+        Structure:
+    </h3>
+    <p style="list-style: circle;">
+      
+          <li>
+            Participation: In teams of 1, 2, 3
+         </li>
+          <li>Round :Finals (Online Submissions)</li>
+        
+   
+      <li style="list-style: none;">Finals:
+        <ul>
+          <li>Participants will be given a public interest issue to draft a PIL document on.
+          </li>
+          <li>Submissions of the draft should be uploaded within the specified deadline.
+          </li>
+          <li>Specific Details will be conveyed after registration</li>
+        </ul>
+      </li>
+
+    </p>
+    <h3>
+        Rules & Regulations:
+    </h3>
+    <p style="list-style: circle;">
+      <li>The competition is open to law students, legal professionals, and legal enthusiasts from all over the world.</li>
+      <li>Participants must register on our website for free.</li>
+      <li>Participants may compete individually or form teams of up to three members.</li>
+      <li>All submissions must be the original work of the participants.</li>
+      <li>Plagiarism or the use of pre-existing PIL documents is strictly prohibited.</li>
+      <li>Submissions should be in English and adhere to proper legal formatting standards.</li>
+      <li>Document length and formatting guidelines will be provided to participants.</li>
+      <li>Specific deadlines for each round will be communicated on our website.</li>
+      <li>Late submissions will not be accepted.</li>
+      <li>Submissions will be judged on the basis of legal analysis, research depth, writing clarity, and the impact of the proposed PIL.</li>
+      <li>The decision of the organizing team is final and binding.</li>
+      <li>Participants retain ownership of their work, but we may request permission to feature or showcase winning entries on our platform.</li>
+      <li>Disqualification may occur for violations of the competition rules or unethical conduct.</li>
+
+    </p>
+    <h3>
+        Prizes & Perks:
+
+    </h3>
+    <p style="list-style: circle;">
+      <li><b>Cash Prizes</b>
+        <ul style="list-style-type: style circle;">
+          <li> 1st Prize - 5000
+          </li>
+          <li>2nd Prize - 3000</li>
+          <li>3rd Prize - 2000</li>
+        </ul>
+      </li>
+      <li>
+       
+        Abhyuday, IIT Bombay Certificates: Awarded to all participants, recognizing their efforts and creativity.
+      </li>
+      
+      
+    </p>
+   </div>
+</div>
+</section>
+<div class="contact-div">
+    <h2 class="text-center" class="contact-text"><b class="contact-text" data-aos="fade-right"
+      
+      data-aos-easing="ease-in-sine"  id="contact-us-abhyuday">Contact Us</h2>
+   <div class="d-flex flex-column justify-content-center p-2vw" style="gap: 20px; margin-top: 7vw;">
+    
+     <div class="text-center name-div" data-aos="zoom-in-up" data-aos-duration="1000">
+      <h3 class="person">Prajyot Chakre</h3>
+        
+        <h5 class="post">Competitions Head</h5>
+      
+        <h5 class="post">prajyot.abhyuday@gmail.com</h5>
+      
+        <h5 class="post">7448175579</h5>
+    </div>
+   </div>
+  </div>
+
+{% endblock body %}

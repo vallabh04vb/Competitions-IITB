@@ -1,0 +1,141 @@
+{% extends 'base.html' %}
+{% load static %}
+{%block body%}
+{% if messages %}
+{% for message in messages%}
+<div
+  class="alert alert-{{ messages.tags }} alert-dismissible fade show"
+  role="alert"
+  style="
+    margin: 0;
+    z-index: 999;
+   
+    border: 10px solid #4D80FF;
+    
+    background: #C7D7FE;
+    
+    box-shadow: 0px 0px 50px 1px #444CE7;
+    font-family: Future Bk Bt !important;
+    color: Black !important;
+  "
+>
+  <strong>{{ message }}</strong>
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+{% endfor %} {%endif%}
+<div class="main-img">
+    <img src="./static/images/Adhikaar Jr. Cover Image (1).png" alt="" class="compi-img">
+    <div class="d-flex justify-content-center" style="background-color:#15284D ; margin-top: 
+    -2vw;" >
+        <button  id="text4" data-aos="fade-up"
+      
+      data-aos-easing="ease-in-sine"><a href="{% url 'adhikarreg' %}"  style="text-decoration: none;"><b class="register">Register</b></a></button> 
+    </div>
+</div>
+<section class="compi-structure" style="background-color:  #15284D;">
+<div class="details" data-aos="fade-up"
+      
+      data-aos-easing="ease-in-sine" style="background-color:  #C7D7FE;border-radius: 53px;
+border: 10px solid #4D80FF;box-shadow: 0px 0px 50px 1px #444CE7;
+
+">
+   <div class="decrpt">
+    <h3>
+        Description:
+    </h3>
+    <p>
+      Adhikaar, the Debate Competition, is an intellectually stimulating event designed to empower young minds. This competition provides a platform for school students to express their views on critical social issues. Participants engage in passionate debates, enhancing their public speaking, analytical, and persuasive skills while delving into topics of national and global importance.
+
+    </p>
+   </div>
+   <div class="decrpt">
+    <h3>
+        Structure:
+    </h3>
+    <p style="list-style: circle;">
+      <li style="list-style: none;">Participation: In teams of 1 to 4</li>
+      <li style="list-style: none;">Rounds: Semi-Finals (Offline), Finals (Offline)</li>
+      
+      <!-- Preliminary Elimination -->
+      <li style="list-style: none;">Preliminary Elimination:</li>
+      <ul>
+          <li>This will be a turncoat debate. So, you will have to address both sides of the motion.</li>
+          <li>The team will be given a topic 15 minutes before their turn.</li>
+          <li>One of the members of the team can begin with a side of their choice but have to switch as soon as the judge taps. After the tap, the side of the motion and the team member both should be switched.</li>
+          <li>The total time will be 5 min maximum.</li>
+          <li>Each team member has to speak at least once for each of the sides of the motion.</li>
+      </ul>
+      
+      <!-- Finals -->
+      <li style="list-style: none;">Finals:</li>
+      <ul>
+          <li>The top teams from the Semi-Finals will battle it out in the finals.</li>
+          <li>This will be a live British Parliamentary Debate Round.</li>
+          <li>The participants will be given the topic 15 minutes prior to the round.</li>
+          <li>Further details on fixtures and format will be shared later on.</li>
+      </ul>
+    </p>
+    <h3>
+        Rules & Regulations:
+    </h3>
+    <p style="list-style: circle;">
+      <li>Teams can have a maximum of 4 members including the Team leader. More than 4 is not allowed.</li>
+      <li>Teams consisting of members from different schools are not allowed.</li>
+      <li>An individual can be associated only with a single team. Multiple registrations by a particular team or person shall lead to disqualification.</li>
+      
+      <!-- Language and Conduct -->
+      <li>The medium is strictly English in both the rounds.</li>
+      <li>Use of obscene language in any of the rounds will lead to direct disqualification.</li>
+      <li>Participants should refrain themselves from using any statements that might hurt a community or statements directed against any community (religion, gender, race, caste, etc.).</li>
+      
+      <!-- Decision and Disputes -->
+      <li>The decisions of the organizing team will be considered final in case of any disputes.</li>
+    </p>
+    <h3>
+        Prizes & Perks:
+
+    </h3>
+    <p style="list-style: circle;">
+     
+      <li><b>Cash Prizes</b>
+        <ul style="list-style-type: style circle;">
+          <li> 1st Prize - 5000
+          </li>
+          <li>2nd Prize - 3000</li>
+          <li>3rd Prize - 2000</li>
+        </ul>
+      </li>
+      <li> Abhyuday, IIT Bombay Certificates: Provided to all participants (both participation and winners).</li>
+    
+            
+      <li>Exclusive Merchandise of Social Fest'24, IIT Bombay to the winners.
+      </li>
+  
+    </p>
+   </div>
+</div>
+</section>
+<div class="contact-div">
+    <h2 class="text-center" class="contact-text"><b class="contact-text" data-aos="fade-right"
+      
+      data-aos-easing="ease-in-sine"  id="contact-us-abhyuday" >Contact Us</h2>
+   <div class="d-flex flex-column justify-content-center p-2vw" style="gap: 20px; margin-top: 7vw;">
+    
+     <div class="text-center name-div" data-aos="zoom-in-up" data-aos-duration="1000">
+      <h3 class="person">Om Desai</h3>
+    
+      <h5 class="post">Competitions Head</h5>
+    
+      <h5 class="post">desaiom.abhyuday@gmail.com</h5>
+    
+      <h5 class="post">7208303692</h5>
+    </div>
+   </div>
+  </div>
+
+{% endblock body %}

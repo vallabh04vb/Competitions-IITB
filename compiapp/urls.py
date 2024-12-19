@@ -1,0 +1,35 @@
+from django.contrib import admin
+from django.urls import path
+from compiapp import views
+urlpatterns = [
+ path("", views.index, name='index'),
+ path('SocioTrivia', views.SocioTrivia, name='SocioTrivia'),
+ path('SocioExhibition', views.SocialExhibition, name='SocioExhibition'),
+path('Triviareg', views.Triviareg, name='Triviareg'),
+path('SocioExhibitionreg', views.SocioExhibitionreg, name='SocioExhibitionreg'),
+path('hackathon', views.hackathon, name='hackathon'),
+path('hackathonreg', views.hackathonreg, name='hackathonreg'),
+path('Hack', views.Hack, name='Hack'), 
+path('Account',views.Account, name='Account'),
+path('Socio_ex',views.Socio_ex, name='Socio_ex'),
+path('Case', views.Case, name='Case'),
+path('Casestudyreg', views.Casestudyreg, name='Casestudyreg'),
+path('Case_study', views.Case_study, name='Case_study'), 
+path('PIL', views.PIL, name='PIL'),
+path('PilDraftreg', views.PilDraftreg, name='PilDraftreg'),
+path('PilDrafting', views.PilDrafting, name='PilDrafting'), 
+path('Union_budget', views.Union_budget, name='Union_budget'),
+path('union-budgetreg', views.union_budgetreg, name='union-budgetreg'),
+path('SP_F', views.SP_F, name='SP_F'), 
+path('moot', views.mootcourt, name='moot'),
+path('moot_c', views.mootcourtreg, name='moot_c'),
+path('moot_court', views.moot_court, name='moot_court'), 
+path('mock_parliament', views.mock_parliament, name='mock_parliament'),
+path('Mock_parliamentreg', views.Mock_parliamentreg, name='Mock_parliamentreg'),
+path('adhi', views.adhi, name='adhi'), 
+path('adhikar', views.adhikar, name='adhikar'),
+path('adhikarreg', views.adhikarreg, name='adhikarreg'),
+path('adhi_jr', views.adhi_jr, name='adhi_jr'), 
+#  path('competitions', views.competitions_view, name='competitions'),
+
+]

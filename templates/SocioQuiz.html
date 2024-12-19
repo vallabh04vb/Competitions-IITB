@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+{% load static %}
+{%block body%}
+{% if messages %}
+{% for message in messages%}
+<div
+  class="alert alert-{{ messages.tags }} alert-dismissible fade show"
+  role="alert"
+  style="
+    margin: 0;
+    z-index: 999;
+   border: 10px solid #4D80FF;
+    
+    background: #C7D7FE;
+    
+    box-shadow: 0px 0px 50px 1px #444CE7;
+    font-family: Future Bk Bt !important;
+    color: Black !important;
+  "
+    font-family: Future Bk Bt !important;
+  "
+>
+  <strong>{{ message }}</strong>
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+{% endfor %} {%endif%}
+<div class="main-img">
+    <img src="./static/images/st-compi.png" alt="" class="compi-img">
+    <div class="d-flex justify-content-center" style="background-color:#15284D ; margin-top: 
+    -2vw;" >
+        <button  id="text4" data-aos="fade-up"
+      
+      data-aos-easing="ease-in-sine"><a href="{% url 'Triviareg' %}"  style="text-decoration: none;"><b class="register">Register</b></a></button> 
+    </div>
+</div>
+<section class="compi-structure" style="background-color:  #15284D;">
+<div class="details" style="background-color:  #C7D7FE;border-radius: 53px;
+border: 10px solid #4D80FF;box-shadow: 0px 0px 50px 1px #444CE7;
+
+">
+   <div class="decrpt">
+    <h3>
+        Description:
+    </h3>
+    <p>
+        The Socio Trivia Competition is an exhilarating offline event designed to challenge the knowledge and critical thinking skills of school students regarding vital social issues. This intellectually stimulating competition aims to foster a spirit of healthy competition, teamwork, and learning among participants. With questions spanning history, current events, environmental concerns, human rights, and social justice, students engage in a dynamic quiz format, testing their understanding of the world's pressing challenges.
+
+    </p>
+   </div>
+   <div class="decrpt">
+    <h3>
+        Structure:
+    </h3>
+    <p style="list-style: circle;">
+        <li>Round 1: Preliminary Elimination (Offline)</li>
+        <li>Round 2: Finals (Offline)</li>
+
+    </p>
+    <h3>
+        Rules & Regulations:
+    </h3>
+    <p style="list-style: circle;">
+        <li>Each team comprises 2 to 3 members from the same school.</li>
+        <li>Schools can register a maximum of 2 teams.</li>
+        <li>Preliminary elimination and finals are conducted offline at the IIT Bombay campus.</li>
+        <li>Teams must adhere to the specified time limits for answering questions.</li>
+        <li>Sportsmanship and fair play are expected from all participants.</li>
+        <li>The decision of the organizing team is final and binding.</li>
+
+    </p>
+    <h3>
+        Prizes & Perks:
+
+    </h3>
+    <p style="list-style: circle;">
+      <li><b>Cash Prizes</b>
+        <ul style="list-style-type: style circle;">
+          <li> 1st Prize - 5000
+          </li>
+          <li>2nd Prize - 3000</li>
+          <li>3rd Prize - 2000</li>
+        </ul>
+      </li>
+        <li>Abhyuday, IIT Bombay Certificates: Provided to all participants (both participation and winners).</li>
+        
+        <li>Exclusive Merchandise of Social Fest'24, IIT Bombay to the winners.</li>
+
+    </p>
+   </div>
+</div>
+</section>
+<div class="contact-div">
+    <h2 class="text-center" class="contact-text"><b class="contact-text" data-aos="fade-right"
+      
+      data-aos-easing="ease-in-sine"  id="contact-us-abhyuday">Contact Us</h2>
+   <div class="d-flex flex-column justify-content-center p-2vw" style="gap: 20px; margin-top: 7vw;">
+    
+     <div class="text-center name-div" data-aos="zoom-in-up" data-aos-duration="1000">
+      <h3 class="person">Om Desai</h3>
+    
+      <h5 class="post">Competitions Head</h5>
+    
+      <h5 class="post">desaiom.abhyuday@gmail.com</h5>
+    
+      <h5 class="post">7208303692</h5>
+    </div>
+   </div>
+  </div>
+
+{% endblock body %}
+
+

@@ -1,0 +1,318 @@
+{% extends 'base.html' %}
+{% load static %}
+{%block body%}
+<div class="main-img">
+    <img src="./static/images/Competitions.webp" alt="" class="compi-img animate__animated animate__fadeIn">
+</div>
+<div class="about">
+    <h2 class=" text-center about-text " data-aos="fade-up"
+      
+      data-aos-easing="ease-in-sine">About Competitions</h2>
+    <p class="text-center about-para" data-aos="fade-up"
+      
+      data-aos-easing="ease-in-sine">The Competitions at Abhyuday, IIT Bombay serve as a platform to cultivate sustainable solutions for societal challenges by fostering engagement with communities and stakeholders. Geared towards inspiring the youth to address social issues through innovation, these competitions have reached over 25 states and 50 cities, drawing participation from more than 1000 teams and involving 2500+ students and professionals nationwide.</p>
+
+</div>
+<h2 class=" text-center about-text " style=" background-color: #15284D; margin-bottom: -4px; color: white; 
+font-family: Marcellus;" id="compitition-abhyuday" data-aos="fade-up"
+      
+      data-aos-easing="ease-in-sine" >Competitions</h2>
+<div class="card-container">
+   
+    <div class="card">
+      <div class="content">
+          <h3 class="compi-tittle">SocioTrivia</h3>
+        <p><a href="{% url 'SocioTrivia' %}"><button id="details-bt">Details</button></a>
+        </p>
+      </div>
+      <img class="compi-card" data-aos="fade-up"
+      
+      data-aos-easing="ease-in-sine" src="./static/images/Socio-Quiz.png" alt="">
+    </div>
+    <div class="card">
+        <div class="content">
+            <h3 class="compi-tittle">Socio Exhibition</h3>
+          <p><a href="{% url 'SocioExhibition' %}"><button id="details-bt">Details</button></a>
+          </p>
+        </div>
+        <img class="compi-card" data-aos="fade-up"
+      
+      data-aos-easing="ease-in-sine" src="./static/images/Socio-ex.png" alt="">
+      </div>
+      <div class="card">
+        <div class="content">
+            <h3 class="compi-tittle">Adhikaar </h3>
+          <p><a href="{% url 'adhikar' %}"><button id="details-bt">Details</button></a>
+          </p>
+        </div>
+        <img class="compi-card" data-aos="fade-up"
+      
+      data-aos-easing="ease-in-sine" src="./static/images/Adhikaar Jr. (1).png" alt="">
+     </div>
+      <div class="card">
+        <div class="content">
+            <h3 class="compi-tittle">Case Study</h3>
+          <p><a href="{% url 'Case' %}"><button id="details-bt">Details</button></a>
+          </p>
+        </div>
+        <img class="compi-card" data-aos="fade-up"
+      
+      data-aos-easing="ease-in-sine" src="./static/images/Case.png" alt="">
+      </div>
+      <div class="card">
+        <div class="content">
+            <h3 class="compi-tittle">Pil Drafting</h3>
+          <p><a href="{% url 'PIL' %}"><button id="details-bt">Details</button></a>
+          </p>
+        </div>
+        <img class="compi-card" data-aos="fade-up"
+      
+      data-aos-easing="ease-in-sine" src="./static/images/pil.png" alt="">
+      </div>
+      <div class="card">
+        <div class="content">
+            <h3 class="compi-tittle">The Union Budget</h3>
+          <p><a href="{% url 'Union_budget' %}"><button id="details-bt">Details</button></a>
+          </p>
+        </div>
+        <img class="compi-card" data-aos="fade-up"
+      
+      data-aos-easing="ease-in-sine" src="./static/images/SPF1.png" alt="">
+      </div>
+      <div class="card">
+        <div class="content">
+            <h3 class="compi-tittle">Moot Court</h3>
+          <p><a href="{% url 'moot' %}"><button id="details-bt">Details</button></a>
+          </p>
+        </div>
+        <img class="compi-card" data-aos="fade-up"
+      
+      data-aos-easing="ease-in-sine" src="./static/images/Moot Court.png" alt="">
+      </div>
+      <div class="card">
+        <div class="content">
+            <h3 class="compi-tittle">Mock Parliament</h3>
+          <p><a href="{% url 'mock_parliament' %}"><button id="details-bt">Details</button></a>
+          </p>
+        </div>
+        <img class="compi-card" data-aos="fade-up"
+      
+      data-aos-easing="ease-in-sine" src="./static/images/Adhikaar1.png" alt="">
+      </div>
+     
+     <div class="card">
+      <div class="content">
+          <h3 class="compi-tittle">Hackathon</h3>
+        <p><a href="{% url 'hackathon' %}"><button id="details-bt">Details</button></a>
+        </p>
+      </div>
+      
+      <img class="compi-card" data-aos="fade-up"
+    
+    data-aos-easing="ease-in-sine" src="./static/images/Hack.png" alt="">
+    </div>
+  </div>
+  <h2 class=" text-center about-text" style=" background-color: #15284D; margin-bottom: -4px; color: white; 
+font-family: Marcellus; padding: 30px;" id="FAQs-abhyuday" data-aos="fade-up"
+      
+      data-aos-easing="ease-in-sine">FAQ's</h2>
+<div class="row display-flex justify-content-center faqbg">
+    <div class="col-lg-10 col-sm-12 faq-width" >
+      <div class="accordion" id="accordionExample" >
+        <div class="accordion-item my-5 mx-5" >
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+            Are the competitions open for all?
+
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Yes, all the competitions are open for
+              All.
+              
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item my-5 mx-5">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+            Is the registration and participation
+            in the competitions free of cost?
+            
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Yes, there is no fees to participate in the
+              competition.
+              
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item my-5 mx-5">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+            Can I participate in multiple competitions simultaneously?
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Yes, you can participate in multiple competitions at the same time, as long as the schedules do not overlap. Make sure to check the timeline and deadlines for each competition you wish to enter.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item my-5 mx-5">
+          <h2 class="accordion-header" id="headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+           
+How can I stay updated on upcoming competitions and events?
+
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              To stay informed about upcoming competitions, follow this official website and all social media platforms of Abhyuday. We regularly post updates, announcements, and details about new competitions.
+            </div>
+          </div>
+        </div>
+        {% comment %} <div class="accordion-item my-5 mx-5">
+          <h2 class="accordion-header" id="headingFive">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFive"
+              aria-expanded="false"
+              aria-controls="collapseFive"
+            >
+            Where do I register my team?
+            </button>
+          </h2>
+          <div
+            id="collapseFive"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFive"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Your team can consist of 1-4 members.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item my-5 mx-5">
+          <h2 class="accordion-header" id="headingSix">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSix"
+              aria-expanded="false"
+              aria-controls="collapseSix"
+            >
+            Where do I register my team?
+            </button>
+          </h2>
+          <div
+            id="collapseSix"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingSix"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              The registration confirmation link will include the link to add your team members along with the Questionnaire.
+            </div>
+          </div>
+        </div> {% endcomment %}
+       
+        
+      </div>
+    </div>
+</div>
+<div class="contact-div" id="contact-us-abhyuday">
+    <h2 class="text-center" class="contact-text"><b class="contact-text" data-aos="fade-up"
+      
+      data-aos-easing="ease-in-sine"
+      
+       >Contact Us</h2>
+   <div class="d-flex flex-column justify-content-center p-2vw" style="gap: 20px; margin-top: 7vw;">
+     <div class="pra-dev-div">
+      <div class=" text-center name-div" data-aos="zoom-in-left" data-aos-duration="1000">
+        <h3 class="person">Prajyot Chakre</h3>
+        
+        <h5 class="post">Competitions Head</h5>
+      
+        <h5 class="post">prajyot.abhyuday@gmail.com</h5>
+      
+        <h5 class="post">7448175579</h5>
+      </div>
+      <div class="text-center name-div" data-aos="zoom-in-right" data-aos-duration="1000">
+        <h3 class="person">Devang Agarwal</h3>
+      
+        <h5 class="post">Competitions Head</h5>
+      
+        <h5 class="post">devang.abhyuday@gmail.com</h5>
+      
+        <h5 class="post">9898558427</h5>
+      </div>
+     </div>
+     <div class="text-center name-div" data-aos="zoom-in-up" data-aos-duration="1000">
+      <h3 class="person">Om Desai</h3>
+    
+      <h5 class="post">Competitions Head</h5>
+    
+      <h5 class="post">desaiom.abhyuday@gmail.com</h5>
+    
+      <h5 class="post">7208303692</h5>
+     </div>
+   </div>
+  </div>
+{%endblock body%}
